@@ -11,7 +11,12 @@
     "lint:fix": "eslint \"{src,pages,app,lib}/**/*.{js,mjs,cjs,ts,mts,jsx,tsx}\" --fix"
   },
   "dependencies": {
+    "@mantine/core": "^7.10.1",
+    "@mantine/hooks": "^7.10.1",
+    "@tabler/icons-react": "^3.5.0",
+    "modern-normalize": "^2.0.0",
     "next": "14.2.3",
+    "normalize.css": "^8.0.1",
     "react": "^18",
     "react-dom": "^18"
   },
@@ -21,7 +26,10 @@
     "@types/react-dom": "^18",
     "eslint": "^8.57.0",
     "eslint-kit": "^10.31.1",
-    "typescript": "^5",
-    "prettier": "^3.3.1"
+    "postcss": "^8.4.38",
+    "postcss-preset-mantine": "^1.15.0",
+    "postcss-simple-vars": "^7.0.1",
+    "prettier": "^3.3.1",
+    "typescript": "^5"
   }
 }
