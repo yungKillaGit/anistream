@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint \"{src,pages,app,lib}/**/*.{js,mjs,cjs,ts,mts,jsx,tsx}\"",
     "open-browser": "start chrome http://localhost:3000",
-    "lint:fix": "eslint \"{src,pages,app,lib}/**/*.{js,mjs,cjs,ts,mts,jsx,tsx}\" --fix"
+    "lint:fix": "eslint \"{src,pages,app,lib}/**/*.{js,mjs,cjs,ts,mts,jsx,tsx}\" --fix",
+    "test:vitest": "vitest",
+    "test:playwright": "npx playwright test"
   },
   "dependencies": {
     "@mantine/core": "^7.10.1",
@@ -21,15 +23,21 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@playwright/test": "^1.44.1",
+    "@testing-library/jest-dom": "^6.4.5",
+    "@testing-library/react": "^16.0.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@vitejs/plugin-react": "^4.3.0",
     "eslint": "^8.57.0",
     "eslint-kit": "^10.31.1",
+    "jsdom": "^24.1.0",
     "postcss": "^8.4.38",
     "postcss-preset-mantine": "^1.15.0",
     "postcss-simple-vars": "^7.0.1",
     "prettier": "^3.3.1",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^1.6.0"
   }
 }

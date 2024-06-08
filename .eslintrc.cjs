@@ -1,4 +1,4 @@
-const { configure, presets } = require('eslint-kit')
+const { configure, presets } = require('eslint-kit');
 
 module.exports = configure({
   allowDebug: process.env.NODE_ENV !== 'production',
@@ -17,4 +17,4 @@ module.exports = configure({
     presets.react(),
     presets.nextJs(),
   ],
-})
+});
