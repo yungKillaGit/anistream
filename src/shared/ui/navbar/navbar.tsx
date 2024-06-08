@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import React, { ReactNode } from 'react';
 import classes from './navbar.module.css';
 
-interface NavbarItem {
+export interface NavbarItem {
   link: string;
   label: string;
   icon?: ReactNode;

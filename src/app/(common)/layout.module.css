@@ -1,0 +1,9 @@
+.container {
+  height: 100%;
+  display: flex;
+}
+
+.pageContainer {
+  margin: rem(16px);
+  flex: 1;
+}

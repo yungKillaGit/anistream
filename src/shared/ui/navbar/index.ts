@@ -1,3 +1,3 @@
-import { Navbar, NavbarIcon } from './navbar';
+import { Navbar, NavbarIcon, NavbarItem } from './navbar';
 
-export { Navbar, NavbarIcon };
+export { Navbar, NavbarIcon, NavbarItem };

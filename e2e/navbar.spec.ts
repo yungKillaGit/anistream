@@ -1,11 +1,11 @@
 import test, { expect } from '@playwright/test';
+import { COMMON_NAVBAR_ITEMS } from '@/app/(common)/layout';
+import { AppPath } from '@/shared/config/routes';
 
 test('Navbar links should navigate to correct routes and highlight active link', async ({ page }) => {
-  await page.goto('/');
+  await page.goto(AppPath.HOME);
 
-  const navbarData = [{ label: 'Home', link: '/' }];
-
-  for (const item of navbarData) {
+  for (const item of COMMON_NAVBAR_ITEMS) {
     const link = page.getByRole('link', { name: item.label });
 
     await expect(link).toHaveAttribute('href', item.link);
