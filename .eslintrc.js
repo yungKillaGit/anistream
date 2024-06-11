@@ -1,4 +1,4 @@
-const { configure, presets } = require('eslint-kit');
+const { configure, presets } = require('eslint-kit')
 
 module.exports = configure({
   allowDebug: process.env.NODE_ENV !== 'production',
@@ -7,6 +7,7 @@ module.exports = configure({
     presets.imports(),
     presets.node(),
     presets.prettier({
+      semi: true,
       singleQuote: true,
       tabWidth: 2,
       quoteProps: 'consistent',
@@ -17,4 +18,4 @@ module.exports = configure({
     presets.react(),
     presets.nextJs(),
   ],
-});
+})

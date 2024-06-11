@@ -36,7 +36,8 @@
     "**/*.mjs",
     "src/**/*",
     "e2e/*.ts",
-    "middleware.ts"
+    "middleware.ts",
+    ".eslintrc.js"
   ],
   "exclude": [
     "node_modules"
