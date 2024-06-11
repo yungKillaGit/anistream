@@ -1,0 +1,19 @@
+.loginPageContainer {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+
+.loginForm {
+  padding: rem(16px);
+  background-color: var(--mantine-color-dark-5);
+  border-radius: rem(16px);
+  width: rem(400px);
+}
+
+.loginButton {
+  margin-top: rem(16px);
+}
